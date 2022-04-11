@@ -1,0 +1,7 @@
+dans Phpmyadmin
+
+crée une nouvelle base de données
+
+mettre le nom gamebox avec utf8_general_ci
+
+puis importez le fichier.sql
