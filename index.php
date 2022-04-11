@@ -14,6 +14,7 @@
     <?php require_once 'content/navbar.php'; ?>
 
     <h1>Gamebox</h1>
+    <h2>test</h2>
 
     <div id="modal1" class="modal">
       <div class="modal-content">
