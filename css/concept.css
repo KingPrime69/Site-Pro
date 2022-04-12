@@ -1,10 +1,16 @@
 
 h1 {
   color: red;
+  text-align: center;
+  margin-top: 45px;
 }
 
+h2 {
+  color: red;
+  text-align: center;
+}
 footer{
-  color: black;
+  background-color: black!important;
   border-top: 6px solid rgba(51, 51, 51, 0.25);
   margin-top: 100px;
   text-align: center;
@@ -17,7 +23,25 @@ footer p{
 
 img{
   margin: 4%;
-  border-color: black;
-  border-width: 3px;
+  padding: 0%!important;
+  border-color: white;
+  border-width: 1px;
   border-style: solid;
+
+}
+
+.box{
+  background-color: grey;
+  margin-top: -44px;
+}
+
+.btn {
+  color:red!important;
+  background-color: black!important;
+  margin: 1%;
+}
+
+p {
+  text-align:center;
+  font-size: 25;
 }

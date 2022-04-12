@@ -5,6 +5,7 @@
     <ul class="right hide-on-med-and-down">
       <li><a href="#modal1" class="material-icons modal-trigger">person_outline</a></li>
       <li><a href="concept.php">Concept</a></li>
+      <li><a href="index.php">Accueil</a></li>
 
     </ul>
   </div>
