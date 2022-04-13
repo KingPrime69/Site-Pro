@@ -1,23 +1,9 @@
 h1 {
-  color: red;
   text-align: center;
-  margin-top: 45px;
 }
 
 h2 {
-  color: red;
   text-align: center;
-}
-footer{
-  background-color: black!important;
-  border-top: 6px solid rgba(51, 51, 51, 0.25);
-  margin-top: 100px;
-  text-align: center;
-}
-
-footer p{
-  margin-right: auto;
-  margin-left: auto;
 }
 
 img{
@@ -26,18 +12,43 @@ img{
   border-color: white;
   border-width: 1px;
   border-style: solid;
+  height: 312px !important;
+  width: 223px !important;
 
+}
+
+.no-margin{
+  margin: 0 !important;
+}
+
+.color{
+  color: #780404;
+}
+
+.style-font{
+  font-family: 'Rubik Wet Paint', cursive;
+}
+
+.bg-black {
+  background-color: black !important;
 }
 
 .box{
   background-color: grey;
-  margin-top: -44px;
+  margin-top: 2px !important;
+}
+
+.button-box{
+  margin: 1% !important
 }
 
 .btn-box {
-  color:red!important;
   background-color: black!important;
   margin: 1%;
+}
+
+.big{
+  font-size: 100px;
 }
 
 .pbox {
@@ -59,4 +70,16 @@ img{
   border-width: 1px;
   border-style: solid;
   border-radius: 5%;
+}
+
+footer{
+  background-color: black!important;
+  border-top: 6px solid rgba(51, 51, 51, 0.25);
+  margin-top: 100px;
+  text-align: center;
+}
+
+footer p{
+  margin-right: auto;
+  margin-left: auto;
 }

@@ -19,43 +19,29 @@
   <h1>LA GAMEBOX D'OCTOBRE SUR LE THEME <br> <br>HALLOWEEN </h1>
 
   <div class="row">
-
     <div class="col l2">
-
       <img src="img/dbd2.PNG" >
-
     </div>
 
     <div class="col l2">
-
       <img src="img/pkj.PNG" >
-
     </div>
 
     <div class="col l2">
-
       <img src="img/lof.PNG" >
+    </div>
 
-            </div>
+    <div class="col l2">
+      <img src="img/mystery.PNG">
+    </div>
 
-        <div class="col l2">
+    <div class="col l2">
+      <img src="img/dbdfig.PNG">
+    </div>
 
-          <img src="img/mystery.PNG">
-
-              </div>
-
-          <div class="col l2">
-
-            <img src="img/dbdfig.PNG">
-
-                </div>
-
-            <div class="col l2">
-
-              <img src="img/mystery.PNG">
-
-                  </div>
-
+    <div class="col l2">
+      <img src="img/mystery.PNG">
+    </div>
   </div>
 
     <div class="center-align">

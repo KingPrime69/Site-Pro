@@ -1,30 +1,62 @@
 <?php require_once 'helpers\config.php'; ?>
 <html>
-  <head>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    <link type="text/css" rel="stylesheet" href="css/style.css"/>
-
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  </head>
-
+  <?php require_once 'helpers/head.php'; ?>
   <body>
     <?php require_once 'content/navbar.php'; ?>
 
-    <h1>Gamebox</h1>
-    <div class="row">
+    <div class="box bg-black no-margin">
+      <h1 class="style-font no-margin color"> LA GAMEBOX D'OCTOBRE SUR LE THEME</h1>
 
-      <img src="img/dbd.jpg" class=" col l2 ">
+      <h2 class="style-font big color">HALLOWEEN</h2>
 
-      <img src="img/pumpkinjack.jpg" class=" col l2 ">
+      <div class="row">
+          <div class="col l2">
+            <img src="img/dbd2.PNG" >
+          </div>
 
-      <img src="img/players of fear.jpg" class=" col l2 ">
+          <div class="col l2">
+            <img src="img/pkj.PNG" >
+          </div>
 
-      <img src="img/dbd figurine.jpeg" class="col l2 ">
+          <div class="col l2">
+            <img src="img/lof.PNG" >
+          </div>
+
+          <div class="col l2">
+            <img src="img/mystery.PNG">
+          </div>
+
+          <div class="col l2">
+            <img src="img/dbdfig.PNG">
+          </div>
+
+          <div class="col l2">
+            <img src="img/mystery.PNG">
+          </div>
+      </div>
+
+        <div class="center-align button-box">
+            <a class="btn-box style-font color" href="index.php"> AJOUTER AU PANIER </a>
+        </div>
+
+          <div class="center-align button-box">
+              <a class="btn-box style-font color" href="index.php"> EN SAVOIR PLUS </a>
+          </div>
     </div>
+
+
+    <div class="concept">
+
+      <h2 class="style-font color"> NOTRE CONCEPT</h2>
+
+    <p class="pbox style-font">
+    Gamebox propose tous les mois des box de jeux et goodies sur différents thèmes.<br>
+    Chaque mois nous vous proposons une box contenant quatres jeux et deux goddies <br>
+    Trois jeux et un goodies sont connus à l'avance et le quatrième jeu ainsi que le dernier goodies <br>
+    sont des mystères. Les objets mystères seront bien sur en lien avec le thème du mois.
+    </p>
+
+    <?php require_once 'helpers/footer.php'; ?>
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
