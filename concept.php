@@ -20,27 +20,27 @@
 
   <div class="row">
 
-    <img src="img/dbd.jpg" class=" col l2 ">
+    <img src="img/dbd2.PNG" class=" col l2 ">
 
-      <img src="img/pumpkinjack.jpg" class=" col l2 ">
+      <img src="img/pkj.PNG" class=" col l2 ">
 
-        <img src="img/players of fear.jpg" class=" col l2 ">
+        <img src="img/lof.PNG" class=" col l2 ">
 
-          <img src="img/dbd figurine.jpeg" class="col l2 ">
-
-  </div>
-
-  <div class="center-align">
-
-  <a class="btn" href="index.php"> AJOUTER AU PANIER </a>
+          <img src="img/mystery.PNG" class="col l2 ">
 
   </div>
 
     <div class="center-align">
 
-      <a class="btn" href="index.php"> EN SAVOIR PLUS </a>
+        <a class="btn" href="index.php"> AJOUTER AU PANIER </a>
 
     </div>
+
+      <div class="center-align">
+
+          <a class="btn" href="index.php"> EN SAVOIR PLUS </a>
+
+      </div>
 
 </div>
 
@@ -57,7 +57,7 @@ sont des mystères. Les objets mystères seront bien sur en lien avec le thème 
 </p>
 
 </div>
-    <footer class="page-footer">
+    <footer class="page-footer black">
              <div class="container">
                <div class="row">
                  <div class="col l6 s12">
@@ -76,7 +76,7 @@ sont des mystères. Les objets mystères seront bien sur en lien avec le thème 
              </div>
              <div class="footer-copyright">
                <div class="container">
-               © 2014 Copyright Text
+               © 2022 Copyright Text
                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
                </div>
              </div>
