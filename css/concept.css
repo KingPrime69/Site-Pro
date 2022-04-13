@@ -22,24 +22,28 @@ footer p{
 }
 
 img{
-  margin: 4%;
-  padding: 0%!important;
+  margin: 2%;
+  padding: 0% !important;
   border-color: white;
   border-width: 1px;
   border-style: solid;
   margin-left: 50px;
-
-
+  height: 312px !important;
+  width: 223px !important;
 }
 
 .box{
-  background-color: grey;
+  background-color: black;
   margin-top: -44px;
 }
 
+.col l2{
+    background-color: black;
+}
+
 .btn {
-  color:red!important;
-  background-color: black!important;
+  color:red !important;
+  background-color: black !important;
   margin: 1%;
 }
 
