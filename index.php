@@ -5,6 +5,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -14,15 +15,15 @@
     <?php require_once 'content/navbar.php'; ?>
 
     <h1>Gamebox</h1>
+    <div class="row">
 
-    <div id="modal1" class="modal">
-      <div class="modal-content">
-        <h4>Modal Header</h4>
-        <p>A bunch of text</p>
-      </div>
-      <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-      </div>
+      <img src="img/dbd.jpg" class=" col l2 ">
+
+      <img src="img/pumpkinjack.jpg" class=" col l2 ">
+
+      <img src="img/players of fear.jpg" class=" col l2 ">
+
+      <img src="img/dbd figurine.jpeg" class="col l2 ">
     </div>
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/jquery.js"></script>

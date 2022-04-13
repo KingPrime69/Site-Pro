@@ -1,0 +1,62 @@
+h1 {
+  color: red;
+  text-align: center;
+  margin-top: 45px;
+}
+
+h2 {
+  color: red;
+  text-align: center;
+}
+footer{
+  background-color: black!important;
+  border-top: 6px solid rgba(51, 51, 51, 0.25);
+  margin-top: 100px;
+  text-align: center;
+}
+
+footer p{
+  margin-right: auto;
+  margin-left: auto;
+}
+
+img{
+  margin: 4%;
+  padding: 0%!important;
+  border-color: white;
+  border-width: 1px;
+  border-style: solid;
+
+}
+
+.box{
+  background-color: grey;
+  margin-top: -44px;
+}
+
+.btn-box {
+  color:red!important;
+  background-color: black!important;
+  margin: 1%;
+}
+
+.pbox {
+  text-align:center;
+  font-size: 25;
+}
+
+.gg{
+  margin-top: 25px;
+}
+
+.login{
+  display: none;
+}
+
+.btnCo{
+  border-color: #0089ff;
+  color: #0089ff;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5%;
+}
