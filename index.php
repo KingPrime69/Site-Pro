@@ -5,9 +5,9 @@
     <?php require_once 'content/navbar.php'; ?>
 
     <div class="box bg-black no-margin">
-      <h1 class="style-font no-margin color"> LA GAMEBOX D'OCTOBRE SUR LE THEME</h1>
+      <h1 class="style-font no-margin color-text"> LA GAMEBOX D'OCTOBRE SUR LE THEME</h1>
 
-      <h2 class="style-font big color">HALLOWEEN</h2>
+      <h2 class="style-font big color-text">HALLOWEEN</h2>
 
       <div class="row">
           <div class="col l2">
@@ -36,18 +36,18 @@
       </div>
 
         <div class="center-align button-box">
-            <a class="btn-box style-font color" href="index.php"> AJOUTER AU PANIER </a>
+            <a class="btn-box style-font color-text" href="index.php"> AJOUTER AU PANIER </a>
         </div>
 
           <div class="center-align button-box">
-              <a class="btn-box style-font color" href="index.php"> EN SAVOIR PLUS </a>
+              <a class="btn-box style-font color-text" href="index.php"> EN SAVOIR PLUS </a>
           </div>
     </div>
 
 
     <div class="concept">
 
-      <h2 class="style-font color"> NOTRE CONCEPT</h2>
+      <h2 class="style-font color-text"> NOTRE CONCEPT</h2>
 
     <p class="pbox style-font">
     Gamebox propose tous les mois des box de jeux et goodies sur différents thèmes.<br>
