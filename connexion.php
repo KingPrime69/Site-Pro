@@ -38,7 +38,7 @@
     <div class="row login">
       <div class="center-align">
         <h3 class="col s12">Se connecter</h3>
-        <p class="little">Vous avez déja un compte ?<a href="#">S'inscrire</a></p>
+        <p class="little">Vous n'avez pas encore de compte ?<a href="#">S'inscrire</a></p>
       </div>
 
       <form class="col s5 offset-s4" method="post" action="bdd/login.php">
@@ -57,8 +57,8 @@
           <button class="btn blue darken-4 col s4 gg">Continuer avec Facebook</button>
         </div>
         <div class="row">
-        <button class="center-align col s3 btn btnCo waves-effect white">Se connecter</button>
-        <button class="btn blue col s4 offset-s3 ">Continuer avec Paypal</button>
+        <button class="center-align col s3 btn btnCo waves-effect white gg">Se connecter</button>
+        <button class="btn blue col s4 offset-s3 gg">Continuer avec Paypal</button>
       </div>
       </form>
     </div>
