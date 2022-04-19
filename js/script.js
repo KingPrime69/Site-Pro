@@ -8,4 +8,10 @@ $(document).ready(function(){
     $('.login').hide();
     $('.signin').show();
   })
+
+  // $('.changeFont button').on('click', function(){
+  //   $(".color-text").css({
+  //     "color": "blue",
+  //   });
+  // })
 });

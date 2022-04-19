@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : lun. 11 avr. 2022 à 09:49
--- Version du serveur : 5.7.36
--- Version de PHP : 7.4.26
+-- Généré le :  mar. 19 avr. 2022 à 10:25
+-- Version du serveur :  5.7.26
+-- Version de PHP :  7.3.5
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -18,8 +19,28 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données : `gamebox`
+-- Base de données :  `gamebox`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `css`
+--
+
+DROP TABLE IF EXISTS `css`;
+CREATE TABLE IF NOT EXISTS `css` (
+  `theme` varchar(40) NOT NULL,
+  `color-font` varchar(20) NOT NULL,
+  `style-font` varchar(50) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `css`
+--
+
+INSERT INTO `css` (`theme`, `color-font`, `style-font`) VALUES
+('HALLOWEEN', '#780404', '\'Rubik Wet Paint\', cursive');
 
 -- --------------------------------------------------------
 
@@ -30,10 +51,17 @@ SET time_zone = "+00:00";
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE IF NOT EXISTS `user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `surname` varchar(30) NOT NULL,
-  `password` varchar(30) NOT NULL,
+  `email` varchar(40) NOT NULL,
+  `password` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `user`
+--
+
+INSERT INTO `user` (`id`, `email`, `password`) VALUES
+(1, 'test@test', 'a94a8fe5ccb19ba61c4c0873d391e987982fbbd3');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
