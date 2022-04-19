@@ -1,4 +1,4 @@
-<?php require_once 'helpers\config.php'; ?>
+<?php require_once 'helpers/config.php'; ?>
 <html>
   <?php require_once 'helpers/head.php'; ?>
   <body>
