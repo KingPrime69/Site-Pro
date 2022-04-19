@@ -9,29 +9,29 @@
 
       <h2 class="style-font big color-text">HALLOWEEN</h2>
 
-      <div class="row">
+      <div class="row center-align">
           <div class="col l2">
-            <img src="img/dbd2.PNG" >
+            <img src="img/lof.jpg" >
           </div>
 
           <div class="col l2">
-            <img src="img/pkj.PNG" >
+            <img src="img/pkj.jpg" >
           </div>
 
           <div class="col l2">
-            <img src="img/lof.PNG" >
+            <img src="img/dbd.jpg" >
           </div>
 
           <div class="col l2">
-            <img src="img/mystery.PNG">
+            <img src="img/mystery.PNG" width="271px" height="377px">
           </div>
 
           <div class="col l2">
-            <img src="img/dbdfig.PNG">
+            <img src="img/dbdfig2.PNG" width="271px" height="377px" >
           </div>
 
           <div class="col l2">
-            <img src="img/mystery.PNG">
+            <img src="img/mystery.PNG" width="271px" height="377px">
           </div>
       </div>
 
@@ -40,14 +40,18 @@
         </div>
 
           <div class="center-align button-box">
-              <a class="btn-box style-font color-text" href="index.php"> EN SAVOIR PLUS </a>
+              <a class="btn-box style-font color-text" href="index.php" style="width:130px"> EN SAVOIR PLUS </a>
           </div>
     </div>
 
 
     <div class="concept">
 
-      <h2 class="style-font color-text"> NOTRE CONCEPT</h2>
+      <div class="center-align">
+        <img src="img/blood.png" >
+      </div>
+
+      <h2 class="style-font"> NOTRE CONCEPT</h2>
 
     <p class="pbox style-font">
     Gamebox propose tous les mois des box de jeux et goodies sur différents thèmes.<br>

@@ -12,9 +12,7 @@ img{
   border-color: white;
   border-width: 1px;
   border-style: solid;
-  height: 312px !important;
-  width: 223px !important;
-
+  margin-top: 100px;
 }
 
 .no-margin{
@@ -30,30 +28,35 @@ img{
 }
 
 .bg-black {
-  background-color: black !important;
+  background-image: url("../img/fond.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 1000px;
 }
 
 .box{
-  background-color: grey;
   margin-top: 2px !important;
 }
 
 .button-box{
-  margin: 1% !important
+  margin: 3% !important
 }
 
 .btn-box {
   background-color: black!important;
-  margin: 1%;
+  padding: 10px 24px;
+  font-size: 30px;
 }
 
 .big{
   font-size: 100px;
+
 }
 
 .pbox {
   text-align:center;
-  font-size: 25;
+  font-size: 30;
+  margin-top: 50px;
 }
 
 .gg{
@@ -71,7 +74,9 @@ img{
   border-width: 1px;
   border-style: solid;
   border-radius: 5%;
+  font-size: 100px;
 }
+
 
 footer{
   background-color: black!important;
