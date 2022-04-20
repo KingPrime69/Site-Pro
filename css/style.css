@@ -77,6 +77,10 @@ img{
   font-size: 100px;
 }
 
+.btnText{
+  font-size: 100%;
+}
+
 
 footer{
   background-color: black!important;
