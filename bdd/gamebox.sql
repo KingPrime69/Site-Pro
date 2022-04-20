@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : mer. 20 avr. 2022 à 14:30
+-- Généré le : mer. 20 avr. 2022 à 19:00
 -- Version du serveur : 5.7.36
 -- Version de PHP : 7.4.26
 
@@ -55,6 +55,7 @@ INSERT INTO `css` (`id`, `activated`, `theme`, `color-font`, `style-font`) VALUE
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE IF NOT EXISTS `user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(50) NOT NULL,
   `email` varchar(40) NOT NULL,
   `password` text NOT NULL,
   PRIMARY KEY (`id`)
@@ -64,8 +65,8 @@ CREATE TABLE IF NOT EXISTS `user` (
 -- Déchargement des données de la table `user`
 --
 
-INSERT INTO `user` (`id`, `email`, `password`) VALUES
-(1, 'test@test', 'a94a8fe5ccb19ba61c4c0873d391e987982fbbd3');
+INSERT INTO `user` (`id`, `username`, `email`, `password`) VALUES
+(1, '', 'test@test', 'a94a8fe5ccb19ba61c4c0873d391e987982fbbd3');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

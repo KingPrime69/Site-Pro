@@ -55,7 +55,7 @@ img{
 }
 
 .bg-black {
-  background-image: url("../img/fond.jpg");
+  background-image: url("img/fond.jpg");
   background-size: cover;
   background-position: center;
   height: 1000px;
