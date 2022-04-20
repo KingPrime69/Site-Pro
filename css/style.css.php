@@ -8,12 +8,10 @@ $pdo = new PDO(
 $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_WARNING);
 
 
-  $sqlColor = "SELECT `color-font` FROM `css` WHERE `theme` = 'HALLOWEEN'";
-  $pre = $pdo->prepare($sqlColor);
+  $sql = "SELECT * FROM `css` WHERE `theme` = 'HIVER'";
+  $pre = $pdo->prepare($sql);
   $pre->execute();
-
-  $color= current($pre->fetchAll(PDO::FETCH_ASSOC));
-
+  $data = $pre->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 
@@ -39,11 +37,15 @@ img{
 }
 
 .color-text{
-  color: <?php echo $color; ?>;
+  <?php foreach ($data as $color): ?>
+    color: <?php echo $color['color-font'];?>
+  <?php endforeach; ?>
 }
 
 .style-font{
-  font-family: 'Rubik Wet Paint', cursive;
+  <?php foreach ($data as $font): ?>
+    font-family: <?php echo $font['style-font'];?>;
+  <?php endforeach; ?>
 }
 
 .bg-black {
