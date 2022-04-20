@@ -53,7 +53,7 @@
 
       <h2 class="style-font"> NOTRE CONCEPT</h2>
 
-    <p class="pbox style-font">
+    <p class="pbox">
     Gamebox propose tous les mois des box de jeux et goodies sur différents thèmes.<br>
     Chaque mois nous vous proposons une box contenant quatres jeux et deux goddies <br>
     Trois jeux et un goodies sont connus à l'avance et le quatrième jeu ainsi que le dernier goodies <br>

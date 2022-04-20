@@ -1,3 +1,26 @@
+<?php
+$pdo = new PDO(
+    'mysql:host=localhost;dbname=gamebox;',
+    'root',
+    '',
+    array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8')
+);
+$pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_WARNING);
+
+  $sqltheme = "SELECT theme FROM `css` WHERE activated = 1";
+  $prep = $pdo->prepare($sqltheme);
+  $prep->execute();
+  $dataTheme = $prep->fetchAll(PDO::FETCH_ASSOC);
+
+  foreach ($dataTheme as $theme) {
+    $sql = "SELECT * FROM `css` WHERE `theme` = '".$theme['theme']."'";
+    $pre = $pdo->prepare($sql);
+    $pre->execute();
+    $data = $pre->fetchAll(PDO::FETCH_ASSOC);
+  }
+?>
+
+
 h1 {
   text-align: center;
 }
@@ -20,11 +43,15 @@ img{
 }
 
 .color-text{
-  color: #780404;
+  <?php foreach ($data as $color): ?>
+    color: <?php echo $color['color-font'];?>
+  <?php endforeach; ?>
 }
 
 .style-font{
-  font-family: 'Rubik Wet Paint', cursive;
+  <?php foreach ($data as $font): ?>
+    font-family: <?php echo $font['style-font'];?>;
+  <?php endforeach; ?>
 }
 
 .bg-black {
