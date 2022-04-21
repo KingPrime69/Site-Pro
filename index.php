@@ -5,7 +5,7 @@
     <?php require_once 'content/navbar.php'; ?>
 
     <div class="box bg-black no-margin">
-      <h1 class="style-font no-margin color-text"> LA GAMEBOX D'OCTOBRE SUR LE THEME</h1>
+      <h1 class="style-font no-margin color-text"> LA GAMEBOX D'OCTOBRE SUR LE THEME </h1>
 
       <h2 class="style-font big color-text">HALLOWEEN</h2>
 

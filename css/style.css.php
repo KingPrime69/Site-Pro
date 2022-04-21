@@ -55,7 +55,7 @@ img{
 }
 
 .bg-black {
-  background-image: url("../img/fond.jpg");
+  background-image: url("img/fond.jpg");
   background-size: cover;
   background-position: center;
   height: 1000px;
@@ -102,6 +102,10 @@ img{
   border-style: solid;
   border-radius: 5%;
   font-size: 100px;
+}
+
+.btnText{
+  font-size: 100%;
 }
 
 
