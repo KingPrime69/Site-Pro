@@ -16,7 +16,8 @@
           </div>
           <div>
             <label for="email">Votre e-mail</label>
-            <input type="email" id="email" name="email" placeholder="monadresse@mail.com" required>
+            <input type="hidden" id="email" name="email" placeholder="monadresse@mail.com" required>
+            <p></p>
           </div>
           <div>
             <label for="sujet">Quel est le sujet de votre message ?</label>
