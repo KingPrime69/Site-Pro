@@ -225,3 +225,30 @@ form button {
   box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
   color: #303030;
 }
+
+.infoCarte{
+  border: solid;
+  border-radius: 25px;
+
+}
+
+.infoCarte2{
+  border: solid;
+  border-radius: 25px;
+  padding: 25px;
+}
+
+.modifbtn{
+  border: solid;
+  border-radius: 25px;
+  color: 000000;
+}
+
+.Recap{
+  border: solid;
+  border-radius: 25px;
+  padding: 25px;
+}
+.Paypal{
+  height: 50px;
+}

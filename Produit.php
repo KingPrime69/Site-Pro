@@ -1,14 +1,7 @@
 <?php require_once 'helpers\config.php'; ?>
 <html>
-  <head>
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    <link rel="stylesheet" href="css/Produit.css">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  </head>
-
+  <?php require_once 'helpers/head.php'; ?>
   <body>
     <?php require_once 'content/navbar.php'; ?>
 
@@ -41,36 +34,16 @@
           <img src="img/dbdfig.jpg" class="col l2 offset-l3">
           <p class="center-align">Figurine Dead by Daylight Edition Limitée</p>
         </div>
+        <div class="MysteryGame row">
+          <p class="center-align col l4 offset-l3">Goodies Mystère</p>
+          <img src="img/mystery.PNG" class=" col l2 ">
+        </div>
 
-    <div class="center-align">
-      <a class="btn" href="Achat.php">AJOUER AU PANIER</a>
-    </div>
+        <div class="center-align button-box">
+            <a class="btn-box style-font color-text" href="Achat.php"> AJOUTER AU PANIER </a>
+        </div>
 
-    <footer class="page-footer black">
-             <div class="container">
-               <div class="row">
-                 <div class="col l6 s12">
-                   <h5 class="white-text">NOS BOX</h5>
-                   <li><a class="grey-text text-lighten-3" href="#!">La box du mois</a></li>
-                   <li><a class="grey-text text-lighten-3" href="#!">Notre concept</a></li>
-                 </div>
-                 <div class="col l4 offset-l2 s12">
-                   <h5 class="white-text">AIDE</h5>
-                   <ul>
-                     <li><a class="grey-text text-lighten-3" href="#!">Mentions légales</a></li>
-                     <li><a class="grey-text text-lighten-3" href="#!">Contact</a></li>
-                   </ul>
-                 </div>
-               </div>
-             </div>
-             <div class="footer-copyright">
-               <div class="container">
-               © 2014 Copyright Text
-               <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-               </div>
-             </div>
-      </footer>
-
+    <?php require_once 'helpers/footer.php'; ?>
 
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>

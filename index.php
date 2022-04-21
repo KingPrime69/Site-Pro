@@ -23,30 +23,6 @@
     <?php endforeach; ?>
 
       <div class="row center-align">
-<<<<<<< HEAD
-
-          <div class="col l2  s6 no-margin imge">
-            <a href="Produit.php"> <img src="img/lof.jpg"></a>
-          </div>
-
-          <div class="col l2 s6 no-margin imge">
-            <a href="Produit.php"> <img src="img/pkj.jpg"> </a>
-          </div>
-
-          <div class="col l2 s6 no-margin imge">
-           <a href="Produit.php"> <img src="img/dbd.jpg"></a>
-         </div>
-          <div class="col l2 s6 no-margin imge">
-            <a href="Produit.php"> <img src="img/mystery.PNG" width="271px" height="377px"></a>
-          </div>
-
-          <div class="col l2 s6 no-margin imge">
-            <a href="Produit.php"> <img src="img/dbdfig2.PNG" width="271px" height="377px"></a>
-          </div>
-
-          <div class="col l2 s6 no-margin imge">
-            <a href="Produit.php"> <img src="img/mystery.PNG" width="271px" height="377px"></a>
-=======
           <div class="col l2">
             <img src="<?php echo $live['Article-1']; ?>" >
           </div>
@@ -69,7 +45,6 @@
 
           <div class="col l2">
             <img src="<?php echo $live['Article-6']; ?>" width="271px" height="377px">
->>>>>>> 2163f057b8859dbd4e5a3cdde1403b0fb7791de0
           </div>
       </div>
 
@@ -78,11 +53,7 @@
         </div>
 
           <div class="center-align button-box">
-<<<<<<< HEAD
-              <a class="btn-box style-font color-text" href="Produit.php" style="width:130px"> EN SAVOIR PLUS </a>
-=======
               <a class="btn-box style-font color-text" href="Produit.php"> EN SAVOIR PLUS </a>
->>>>>>> 871bc187cff2333a4eb1a637fd937bf31c859b85
           </div>
     </div>
 
