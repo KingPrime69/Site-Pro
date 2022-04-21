@@ -36,11 +36,11 @@
       </div>
 
         <div class="center-align button-box">
-            <a class="btn-box style-font color-text" href="index.php"> AJOUTER AU PANIER </a>
+            <a class="btn-box style-font color-text" href="Achat.php"> AJOUTER AU PANIER </a>
         </div>
 
           <div class="center-align button-box">
-              <a class="btn-box style-font color-text" href="index.php" style="width:130px"> EN SAVOIR PLUS </a>
+              <a class="btn-box style-font color-text" href="Produit.php" style="width:130px"> EN SAVOIR PLUS </a>
           </div>
     </div>
 
