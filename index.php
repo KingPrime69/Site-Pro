@@ -23,27 +23,27 @@
 
       <div class="row center-align">
           <div class="col l2">
-            <img src="img/lof.jpg" >
+            <img src="<?php echo $live['Article-1']; ?>" >
           </div>
 
           <div class="col l2">
-            <img src="img/pkj.jpg" >
+            <img src="<?php echo $live['Article-2']; ?>" >
           </div>
 
           <div class="col l2">
-            <img src="img/dbd.jpg" >
+            <img src="<?php echo $live['Article-3']; ?>" >
           </div>
 
           <div class="col l2">
-            <img src="img/mystery.PNG" width="271px" height="377px">
+            <img src="<?php echo $live['Article-4']; ?>" width="271px" height="377px">
           </div>
 
           <div class="col l2">
-            <img src="img/dbdfig2.PNG" width="271px" height="377px" >
+            <img src="<?php echo $live['Article-5']; ?>" width="271px" height="377px" >
           </div>
 
           <div class="col l2">
-            <img src="img/mystery.PNG" width="271px" height="377px">
+            <img src="<?php echo $live['Article-6']; ?>" width="271px" height="377px">
           </div>
       </div>
 
@@ -60,7 +60,7 @@
     <div class="concept">
 
       <div class="center-align">
-        <img src="img/blood.png" >
+        <img src="<?php echo $live['below-image']; ?>" >
       </div>
 
       <h2 class="style-font"> NOTRE CONCEPT</h2>
