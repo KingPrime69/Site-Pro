@@ -1,6 +1,6 @@
 <?php
 require_once "helpers/config.php";
-$sql = "INSERT INTO css(`theme`,`color-font`,`style-font`,`link-font`) VALUES(:theme,:color,:style,:link)";
+$sql = "INSERT INTO css(`theme`,`color-font`,`style-font`,`link-font`,`title`) VALUES(:theme,:color,:style,:link,:title)";
 $verif = "SELECT * FROM css WHERE theme='".$_POST['theme']."'";
 $pre = $pdo->prepare($verif);
 $pre->execute();
@@ -10,10 +10,11 @@ $dataBinded=array(
   ':color'=> $_POST['color'],
 	':style'=> $_POST['style'],
 	':link' => $_POST['link']
+  ':title' => $_POST['title']
 );
-if (empty($data)) {	
+if (empty($data)) {
 	$pre = $pdo->prepare($sql);
 	$pre->execute($dataBinded);
 }
-header('Location:admin.php');
+header('Location:theme.php');
 ?>

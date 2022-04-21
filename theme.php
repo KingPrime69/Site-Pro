@@ -1,8 +1,8 @@
 <?php require_once 'helpers/head.php'; ?>
 <body>
   <?php
-  require_once 'helpers/config.php';
-  require_once 'content/navbar.php';
+    require_once 'helpers/config.php';
+    require_once 'content/navbar.php';
     $sqltheme = "SELECT theme FROM `css` WHERE activated = 1";
     $prep = $pdo->prepare($sqltheme);
     $prep->execute();
@@ -16,7 +16,7 @@
     }
     foreach ($data as $live):
     ?>
-  <h3>Crée un thème pour la page principale</h3>
+  <h3>Crée un thème</h3>
   <div class="row">
     <form class="col s12" method="post" action="adminForm.php">
       <div class="row">
@@ -27,6 +27,10 @@
         <div class="input-field col l3">
           <input placeholder="Couleur actuelle: <?php echo $live['color-font']; ?>" id="color" type="text" class="" name="color">
           <label for="textColor">Text Color</label>
+        </div>
+        <div class="input-field col l6">
+          <input placeholder="Titre actuelle: <?php echo $live['title']; ?>" id="color" type="text" class="" name="title">
+          <label for="Titre">Titre</label>
         </div>
       </div>
       <div class="row">
@@ -73,6 +77,10 @@
         <div class="input-field col l3">
           <input placeholder="Couleur actuelle: <?php echo $live['color-font']; ?>" id="color" type="text" class="" name="color">
           <label for="textColor">Text Color</label>
+        </div>
+        <div class="input-field col l6">
+          <input placeholder="Titre actuelle: <?php echo $live['title']; ?>" id="color" type="text" class="" name="title">
+          <label for="Titre">Titre</label>
         </div>
       </div>
       <div class="row">

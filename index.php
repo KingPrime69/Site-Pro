@@ -3,11 +3,23 @@
   <?php require_once 'helpers/head.php'; ?>
   <body>
     <?php require_once 'content/navbar.php'; ?>
+    <?php
+      $sqltheme = "SELECT theme FROM `css` WHERE activated = 1";
+      $prep = $pdo->prepare($sqltheme);
+      $prep->execute();
+      $dataTheme = $prep->fetchAll(PDO::FETCH_ASSOC);
 
+      foreach ($dataTheme as $theme) {
+        $sql = "SELECT * FROM `css` WHERE `theme` = '".$theme['theme']."'";
+        $pre = $pdo->prepare($sql);
+        $pre->execute();
+        $data = $pre->fetchAll(PDO::FETCH_ASSOC);
+      }
+      foreach ($data as $live):
+    ?>
     <div class="box bg-black no-margin">
-      <h1 class="style-font no-margin color-text"> LA GAMEBOX D'OCTOBRE SUR LE THEME </h1>
-
-      <h2 class="style-font big color-text">HALLOWEEN</h2>
+      <h1 class="style-font no-margin color-text"> <?php echo $live['title']; ?></h1>
+    <?php endforeach; ?>
 
       <div class="row center-align">
           <div class="col l2">
