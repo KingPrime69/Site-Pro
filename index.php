@@ -4,13 +4,26 @@
   <?php require_once 'helpers/head.php'; ?>
   <body>
     <?php require_once 'content/navbar.php'; ?>
+    <?php
+      $sqltheme = "SELECT theme FROM `css` WHERE activated = 1";
+      $prep = $pdo->prepare($sqltheme);
+      $prep->execute();
+      $dataTheme = $prep->fetchAll(PDO::FETCH_ASSOC);
 
+      foreach ($dataTheme as $theme) {
+        $sql = "SELECT * FROM `css` WHERE `theme` = '".$theme['theme']."'";
+        $pre = $pdo->prepare($sql);
+        $pre->execute();
+        $data = $pre->fetchAll(PDO::FETCH_ASSOC);
+      }
+      foreach ($data as $live):
+    ?>
     <div class="box bg-black no-margin">
-      <h1 class="style-font no-margin color-text"> LA GAMEBOX D'OCTOBRE SUR LE THEME </h1>
-
-      <h2 class="style-font big color-text">HALLOWEEN</h2>
+      <h1 class="style-font no-margin color-text"> <?php echo $live['title']; ?></h1>
+    <?php endforeach; ?>
 
       <div class="row center-align">
+<<<<<<< HEAD
 
           <div class="col l2  s6 no-margin imge">
             <a href="Produit.php"> <img src="img/lof.jpg"></a>
@@ -33,6 +46,30 @@
 
           <div class="col l2 s6 no-margin imge">
             <a href="Produit.php"> <img src="img/mystery.PNG" width="271px" height="377px"></a>
+=======
+          <div class="col l2">
+            <img src="<?php echo $live['Article-1']; ?>" >
+          </div>
+
+          <div class="col l2">
+            <img src="<?php echo $live['Article-2']; ?>" >
+          </div>
+
+          <div class="col l2">
+            <img src="<?php echo $live['Article-3']; ?>" >
+          </div>
+
+          <div class="col l2">
+            <img src="<?php echo $live['Article-4']; ?>" width="271px" height="377px">
+          </div>
+
+          <div class="col l2">
+            <img src="<?php echo $live['Article-5']; ?>" width="271px" height="377px" >
+          </div>
+
+          <div class="col l2">
+            <img src="<?php echo $live['Article-6']; ?>" width="271px" height="377px">
+>>>>>>> 2163f057b8859dbd4e5a3cdde1403b0fb7791de0
           </div>
       </div>
 
@@ -49,7 +86,7 @@
     <div class="concept">
 
       <div class="center-align">
-        <img src="img/blood.png" >
+        <img src="<?php echo $live['below-image']; ?>" >
       </div>
 
       <h2 class="style-font"> NOTRE CONCEPT</h2>

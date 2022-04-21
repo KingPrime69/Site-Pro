@@ -52,11 +52,13 @@ img{
 .style-font{
   <?php foreach ($data as $font): ?>
     font-family: <?php echo $font['style-font'];?>;
-  <?php endforeach; ?>
+    <?php endforeach; ?>
 }
 
 .bg-black {
-  background-image: url("img/fond.jpg");
+  <?php foreach ($data as $background): ?>
+  background-image: url("<?php echo $background["background-image"] ?>");
+  <?php endforeach; ?>
   background-size: cover;
   background-position: center;
   height: 900px;
