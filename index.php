@@ -11,6 +11,7 @@
       <h2 class="style-font big color-text">HALLOWEEN</h2>
 
       <div class="row center-align">
+<<<<<<< HEAD
 
           <div class="col l2  s6">
             <a href="Produit.php"> <img src="img/lof.jpg"></a>
@@ -33,6 +34,29 @@
 
           <div class="col l2 s6 ">
             <a href="Produit.php"> <img src="img/mystery.PNG" width="271px" height="377px"></a>
+=======
+          <div class="col l2  s6 no-margin imge">
+            <a href="Produit.php"> <img src="<?php echo $live['Article-1']; ?>" ></a>
+          </div>
+
+          <div class="col l2 s6 no-margin imge">
+            <a href="Produit.php"> <img src="<?php echo $live['Article-2']; ?>" > </a>
+          </div>
+
+          <div class="col l2 s6 no-margin imge">
+           <a href="Produit.php"> <img src="<?php echo $live['Article-3']; ?>" ></a>
+         </div>
+          <div class="col l2 s6 no-margin imge">
+            <a href="Produit.php"> <img src="<?php echo $live['Article-4']; ?>" width="271px" height="377px"></a>
+          </div>
+
+          <div class="col l2 s6 no-margin imge">
+            <a href="Produit.php"> <img src="<?php echo $live['Article-5']; ?>" width="271px" height="377px" ></a>
+          </div>
+
+          <div class="col l2 s6 no-margin imge">
+            <a href="Produit.php"> <img src="<?php echo $live['Article-6']; ?>" width="271px" height="377px"></a>
+>>>>>>> 44305be9f56e081e6d79be4cca1608a37ad38896
           </div>
       </div>
 
@@ -41,7 +65,7 @@
         </div>
 
           <div class="center-align button-box">
-              <a class="btn-box style-font color-text" href="Produit.php"> EN SAVOIR PLUS </a>
+              <a class="btn-box style-font color-text" href="Produit.php" style="width:130px"> EN SAVOIR PLUS </a>
           </div>
     </div>
 
