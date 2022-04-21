@@ -3,7 +3,11 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
+<<<<<<< HEAD
 -- Généré le : jeu. 21 avr. 2022 à 12:57
+=======
+-- Généré le : jeu. 21 avr. 2022 à 18:39
+>>>>>>> 871bc187cff2333a4eb1a637fd937bf31c859b85
 -- Version du serveur : 5.7.36
 -- Version de PHP : 7.4.26
 
@@ -32,6 +36,17 @@ CREATE TABLE IF NOT EXISTS `css` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `activated` tinyint(1) NOT NULL DEFAULT '0',
   `theme` varchar(30) NOT NULL,
+<<<<<<< HEAD
+=======
+  `background-image` varchar(255) NOT NULL,
+  `below-image` varchar(255) NOT NULL,
+  `Article-1` varchar(255) NOT NULL,
+  `Article-2` varchar(255) NOT NULL,
+  `Article-3` varchar(255) NOT NULL,
+  `Article-4` varchar(255) NOT NULL,
+  `Article-5` varchar(255) NOT NULL,
+  `Article-6` varchar(255) NOT NULL,
+>>>>>>> 871bc187cff2333a4eb1a637fd937bf31c859b85
   `color-font` varchar(20) NOT NULL,
   `style-font` varchar(50) NOT NULL,
   `link-font` text NOT NULL,
@@ -43,6 +58,7 @@ CREATE TABLE IF NOT EXISTS `css` (
 -- Déchargement des données de la table `css`
 --
 
+<<<<<<< HEAD
 INSERT INTO `css` (`id`, `activated`, `theme`, `color-font`, `style-font`, `link-font`, `title`) VALUES
 (1, 1, 'HALLOWEEN', '#780404', 'Rubik Wet Paint, cursive', '<link href=\"https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap\" rel=\"stylesheet\">', 'test'),
 (2, 0, 'HIVER', 'white', 'Josefin Sans, sans-serif', '<link href=\"https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap\" rel=\"stylesheet\">', 'test'),
@@ -50,6 +66,15 @@ INSERT INTO `css` (`id`, `activated`, `theme`, `color-font`, `style-font`, `link
 (13, 0, 'qsdf', 'qsdf', '', 'test', ''),
 (12, 0, '', '#069b34', '', '', ''),
 (9, 0, 'NOEL', '#00b8ff', 'Dancing Script, cursive', '<link href=\"https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap\" rel=\"stylesheet\">', '');
+=======
+INSERT INTO `css` (`id`, `activated`, `theme`, `background-image`, `below-image`, `Article-1`, `Article-2`, `Article-3`, `Article-4`, `Article-5`, `Article-6`, `color-font`, `style-font`, `link-font`, `title`) VALUES
+(1, 1, 'HALLOWEEN', 'img/fond.jpg', 'img/blood.png', 'img/lof.jpg', 'img/pkj.jpg', 'img/dbd.jpg', 'img/mystery.PNG', 'img/dbdfig.jpg', 'img/mystery.PNG', '#fff', 'Rubik Wet Paint, cursive', '<link href=\"https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap\" rel=\"stylesheet\">', 'test'),
+(2, 0, 'HIVER', '', '', '', '', '', '', '', '', 'white', 'Josefin Sans, sans-serif', '<link href=\"https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap\" rel=\"stylesheet\">', 'test'),
+(3, 0, 'test', '', '', '', '', '', '', '', '', '#ecbb6e', 'My Soul, cursive', '<link href=\"https://fonts.googleapis.com/css2?family=My+Soul&display=swap\" rel=\"stylesheet\">', ''),
+(13, 0, 'qsdf', '', '', '', '', '', '', '', '', 'qsdf', '', 'test', ''),
+(12, 0, '', '', '', 'img/fond.jpg', 'img/fond.jpg', 'img/fond.jpg', 'img/fond.jpg', 'img/fond.jpg', '', '#069b34', '', '', ''),
+(9, 0, 'NOEL', '', '', '', '', '', '', '', '', '#00b8ff', 'Dancing Script, cursive', '<link href=\"https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap\" rel=\"stylesheet\">', '');
+>>>>>>> 871bc187cff2333a4eb1a637fd937bf31c859b85
 
 -- --------------------------------------------------------
 
