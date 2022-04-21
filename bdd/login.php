@@ -12,12 +12,14 @@ if(empty($data)){ //vérifie si le resultat est vide !
      //non connecté
      $errorShow = array("error");
      $_SESSION['error'] = $errorShow[0];
+     unset($_SESSION['user']);
+     session_destroy();
+     header('Location:../connexion.php');
 }
 else{
   foreach ($data as $user) {
     if ($user['activated'] == 1) {
       $_SESSION['user'] = $user; //on enregistre que l'utilisateur est connecté
-      $_SESSION['email'] = $_POST['email'];
     }
     else{
       //renvoie que le compte est bloqué

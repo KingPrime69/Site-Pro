@@ -1,7 +1,6 @@
 <?php require_once 'helpers/head.php'; ?>
 <body>
   <?php
-    require_once 'helpers/config.php';
     require_once 'content/navbar.php';
     $sql = "SELECT * FROM user";
     $pre = $pdo->prepare($sql);

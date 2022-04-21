@@ -52,11 +52,7 @@
         </div>
 
           <div class="center-align button-box">
-<<<<<<< HEAD
               <a class="btn-box style-font color-text" href="Produit.php" style="width:130px"> EN SAVOIR PLUS </a>
-=======
-              <a class="btn-box style-font color-text" href="Produit.php"> EN SAVOIR PLUS </a>
->>>>>>> 871bc187cff2333a4eb1a637fd937bf31c859b85
           </div>
     </div>
 

@@ -1,7 +1,7 @@
 <?php require_once 'helpers/head.php'; ?>
 <body>
   <?php
-    require_once 'helpers/config.php';
+
     require_once 'content/navbar.php';
     $sqltheme = "SELECT theme FROM `css` WHERE activated = 1";
     $prep = $pdo->prepare($sqltheme);
@@ -18,7 +18,7 @@
     ?>
   <h3>Crée un thème</h3>
   <div class="row">
-    <form class="col s12" method="post" action="adminForm.php">
+    <form class="col s12" method="post" action="createTheme.php">
       <div class="row">
         <div class="input-field col l3">
           <input placeholder="Theme actuelle: <?php echo $live['theme']; ?>" id="theme" type="text" class="" name="theme">
