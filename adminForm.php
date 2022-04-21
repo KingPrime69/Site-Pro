@@ -1,12 +1,19 @@
 <?php
-require_once "../helpers/config.php";
-$sql = "INSERT INTO css(`theme`,`color-font`,`style-font`) VALUES(:theme,:color,:style)";
+require_once "helpers/config.php";
+$sql = "INSERT INTO css(`theme`,`color-font`,`style-font`,`link-font`) VALUES(:theme,:color,:style,:link)";
+$verif = "SELECT * FROM css WHERE theme='".$_POST['theme']."'";
+$pre = $pdo->prepare($verif);
+$pre->execute();
+$data = $pre->fetchAll(PDO::FETCH_ASSOC);
 $dataBinded=array(
   ':theme'  => $_POST['theme'],
-  ':color-font'=> $_POST['color'],
-	':style-font'=> $_POST['style']
+  ':color'=> $_POST['color'],
+	':style'=> $_POST['style'],
+	':link' => $_POST['link']
 );
-$pre = $pdo->prepare($sql);
-$pre->execute($dataBinded);
-header('Location:../index.php');
+if (empty($data)) {	
+	$pre = $pdo->prepare($sql);
+	$pre->execute($dataBinded);
+}
+header('Location:admin.php');
 ?>

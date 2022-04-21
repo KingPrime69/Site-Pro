@@ -14,7 +14,7 @@ if(empty($user)){ //vérifie si le resultat est vide !
      header('Location:../connexion.php');
 }else{
      $_SESSION['user'] = $user; //on enregistre que l'utilisateur est connecté
-     $_SESSION['username'] = $_POST['username'];
+     $_SESSION['username'] = $_POST['email'];
      header('Location:../index.php');
 }
 ?>

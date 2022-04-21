@@ -7,10 +7,10 @@ $pdo = new PDO(
 );
 $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_WARNING);
 
-  $sqltheme = "SELECT theme FROM `css` WHERE activated = 1";
-  $prep = $pdo->prepare($sqltheme);
-  $prep->execute();
-  $dataTheme = $prep->fetchAll(PDO::FETCH_ASSOC);
+  $sql = "SELECT theme FROM `css` WHERE activated = 1";
+  $pre = $pdo->prepare($sqltheme);
+  $pre->execute();
+  $dataTheme = $pre->fetchAll(PDO::FETCH_ASSOC);
 
   foreach ($dataTheme as $theme) {
     $sql = "SELECT * FROM `css` WHERE `theme` = '".$theme['theme']."'";

@@ -1,16 +1,7 @@
 <?php
 require_once "../helpers/config.php";
 
-$conn = mysqli_connect('localhost','root');
-
-$email = $_POST['email'];
-$username = $_POST['username'];
-$password = $_POST['password'];
-
-$hashed = hash('sha1',$password);
-
-$sql = "INSERT INTO user(email,username,password) VALUES('$email','$username','$hashed')";
-
+$sql = "INSERT INTO user(email,password) VALUES(:email,:password)";
 $verif = "SELECT * FROM user WHERE email='".$_POST['email']."'";
 $pre = $pdo->prepare($verif);
 $pre->execute();

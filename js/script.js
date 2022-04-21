@@ -1,3 +1,4 @@
+$('.dropdown-trigger').dropdown();
 $(document).ready(function(){
   $('.modal').modal();
   $('.signin a').on('click', function() {
@@ -9,9 +10,4 @@ $(document).ready(function(){
     $('.signin').show();
   })
 
-  // $('.changeFont button').on('click', function(){
-  //   $(".color-text").css({
-  //     "color": "blue",
-  //   });
-  // })
 });
