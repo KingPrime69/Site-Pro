@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : mer. 20 avr. 2022 à 19:00
+-- Généré le : jeu. 21 avr. 2022 à 12:57
 -- Version du serveur : 5.7.36
 -- Version de PHP : 7.4.26
 
@@ -30,21 +30,26 @@ SET time_zone = "+00:00";
 DROP TABLE IF EXISTS `css`;
 CREATE TABLE IF NOT EXISTS `css` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `activated` tinyint(1) NOT NULL,
-  `theme` varchar(40) NOT NULL,
+  `activated` tinyint(1) NOT NULL DEFAULT '0',
+  `theme` varchar(30) NOT NULL,
   `color-font` varchar(20) NOT NULL,
   `style-font` varchar(50) NOT NULL,
+  `link-font` text NOT NULL,
+  `title` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `css`
 --
 
-INSERT INTO `css` (`id`, `activated`, `theme`, `color-font`, `style-font`) VALUES
-(1, 1, 'HALLOWEEN', '#780404', 'Rubik Wet Paint, cursive'),
-(2, 0, 'HIVER', '#a5e0e6', 'Ms Madi, cursive'),
-(3, 0, 'test', '#ecbb6e', 'My Soul, cursive');
+INSERT INTO `css` (`id`, `activated`, `theme`, `color-font`, `style-font`, `link-font`, `title`) VALUES
+(1, 1, 'HALLOWEEN', '#780404', 'Rubik Wet Paint, cursive', '<link href=\"https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap\" rel=\"stylesheet\">', 'test'),
+(2, 0, 'HIVER', 'white', 'Josefin Sans, sans-serif', '<link href=\"https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap\" rel=\"stylesheet\">', 'test'),
+(3, 0, 'test', '#ecbb6e', 'My Soul, cursive', '<link href=\"https://fonts.googleapis.com/css2?family=My+Soul&display=swap\" rel=\"stylesheet\">', ''),
+(13, 0, 'qsdf', 'qsdf', '', 'test', ''),
+(12, 0, '', '#069b34', '', '', ''),
+(9, 0, 'NOEL', '#00b8ff', 'Dancing Script, cursive', '<link href=\"https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap\" rel=\"stylesheet\">', '');
 
 -- --------------------------------------------------------
 
@@ -55,18 +60,19 @@ INSERT INTO `css` (`id`, `activated`, `theme`, `color-font`, `style-font`) VALUE
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE IF NOT EXISTS `user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(50) NOT NULL,
   `email` varchar(40) NOT NULL,
   `password` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `user`
 --
 
-INSERT INTO `user` (`id`, `username`, `email`, `password`) VALUES
-(1, '', 'test@test', 'a94a8fe5ccb19ba61c4c0873d391e987982fbbd3');
+INSERT INTO `user` (`id`, `email`, `password`) VALUES
+(1, 'test@test', 'a94a8fe5ccb19ba61c4c0873d391e987982fbbd3'),
+(2, 'qsdf@couille.com', '782dd27ea8e3b4f4095ffa38eeb4d20b59069077'),
+(3, 'qsdfff@a', '10d58bd87102f18f6f8d2e7fc4600aab5ef5549c');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
