@@ -1,4 +1,5 @@
   <?php require_once 'helpers/head.php'; ?>
+    <?php require_once 'content/navbar.php'; ?>
 <body>
   <!-- Dropdown Trigger -->
   <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Drop Me!</a>
