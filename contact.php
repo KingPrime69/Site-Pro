@@ -3,9 +3,8 @@
   <?php require_once 'helpers/head.php'; ?>
   <body>
       <?php require_once 'content/navbar.php'; ?>
+
       <div class="bodyform">
-
-
       <div class="contactez-nous">
         <h1>Contactez-nous</h1>
         <p>Un problème, une question ? N’hésitez pas à utiliser ce formulaire pour prendre contact avec nous !</p>
