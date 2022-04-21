@@ -1,5 +1,6 @@
 <?php require_once 'helpers/config.php'; ?>
 <html>
+
   <?php require_once 'helpers/head.php'; ?>
   <body>
     <?php require_once 'content/navbar.php'; ?>
@@ -22,6 +23,30 @@
     <?php endforeach; ?>
 
       <div class="row center-align">
+<<<<<<< HEAD
+
+          <div class="col l2  s6 no-margin imge">
+            <a href="Produit.php"> <img src="img/lof.jpg"></a>
+          </div>
+
+          <div class="col l2 s6 no-margin imge">
+            <a href="Produit.php"> <img src="img/pkj.jpg"> </a>
+          </div>
+
+          <div class="col l2 s6 no-margin imge">
+           <a href="Produit.php"> <img src="img/dbd.jpg"></a>
+         </div>
+          <div class="col l2 s6 no-margin imge">
+            <a href="Produit.php"> <img src="img/mystery.PNG" width="271px" height="377px"></a>
+          </div>
+
+          <div class="col l2 s6 no-margin imge">
+            <a href="Produit.php"> <img src="img/dbdfig2.PNG" width="271px" height="377px"></a>
+          </div>
+
+          <div class="col l2 s6 no-margin imge">
+            <a href="Produit.php"> <img src="img/mystery.PNG" width="271px" height="377px"></a>
+=======
           <div class="col l2">
             <img src="<?php echo $live['Article-1']; ?>" >
           </div>
@@ -44,15 +69,16 @@
 
           <div class="col l2">
             <img src="<?php echo $live['Article-6']; ?>" width="271px" height="377px">
+>>>>>>> 2163f057b8859dbd4e5a3cdde1403b0fb7791de0
           </div>
       </div>
 
         <div class="center-align button-box">
-            <a class="btn-box style-font color-text" href="index.php"> AJOUTER AU PANIER </a>
+            <a class="btn-box style-font color-text" href="Achat.php"> AJOUTER AU PANIER </a>
         </div>
 
           <div class="center-align button-box">
-              <a class="btn-box style-font color-text" href="index.php" style="width:130px"> EN SAVOIR PLUS </a>
+              <a class="btn-box style-font color-text" href="Produit.php"> EN SAVOIR PLUS </a>
           </div>
     </div>
 

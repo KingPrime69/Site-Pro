@@ -1,4 +1,5 @@
   <?php require_once 'helpers/head.php'; ?>
+    <?php require_once 'content/navbar.php'; ?>
 <body>
   <a class="waves-effect waves-light btn" href="theme.php">Theme</a>
   <!--JavaScript at end of body for optimized loading-->
