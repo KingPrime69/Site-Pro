@@ -9,7 +9,7 @@
       <div class="contactez-nous">
         <h1>Contactez-nous</h1>
         <p>Un problème, une question ? N’hésitez pas à utiliser ce formulaire pour prendre contact avec nous !</p>
-        <form action="/page-traitement-donnees" method="post">
+        <form action="/page-traitement-donnees" method="post" class="formContact">
           <div>
             <label for="nom">Votre nom</label>
             <input type="text" id="nom" name="nom" placeholder="Martin" required>

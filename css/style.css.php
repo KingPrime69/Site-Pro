@@ -137,6 +137,11 @@ footer p{
   color: #303030;
 }
 
+.align{
+  margin-left: 10px !important;
+  margin-top: 10px;
+}
+
 
 .contactez-nous {
   width: 700px;
@@ -154,7 +159,7 @@ footer p{
   font-weight: 300;
 }
 
-form div {
+.formContact div {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -162,12 +167,12 @@ form div {
   margin-top: 25px;
 }
 
-form div > label {
+.formContact div > label {
   margin-bottom: 7px;
   font-weight: 600;
 }
 
-form div > input, form div > select, form div > textarea {
+.formContact div > input, form div > select, form div > textarea {
   background: white;
   border: none;
   border-radius: 5px;
@@ -177,12 +182,12 @@ form div > input, form div > select, form div > textarea {
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.25);
 }
 
-form div > input, form div > select {
+.formContact div > input, form div > select {
   height: 50px;
   padding-left: 10px;
 }
 
-form div > select {
+.formContact div > select {
   appearance: none;
   background-size: 15px;
   background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDIxMy4zMzMgMjEzLjMzMyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8cG9seWdvbiBwb2ludHM9IjAsNTMuMzMzIDEwNi42NjcsMTYwIDIxMy4zMzMsNTMuMzMzICAgIiBmaWxsPSIjMzAzMDMwIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BvbHlnb24+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPC9nPjwvc3ZnPg==');
@@ -190,30 +195,30 @@ form div > select {
   background-repeat: no-repeat;
 }
 
-form div > textarea {
+.formContact div > textarea {
   height: 195px;
   padding: 15px 0px 0px 10px;
 }
 
-form div > input::placeholder, form div > textarea::placeholder {
+.formContact div > input::placeholder, form div > textarea::placeholder {
   color: white;
 }
 
-form div > select:invalid {
+.formContact div > select:invalid {
   color: white;
 }
 
-form div > select option {
+.formContact div > select option {
   background: white;
   color: #303030;
 }
 
-form div:last-child {
+.formContact div:last-child {
   align-items:center;
   margin-top: 20px;
 }
 
-form button {
+.formContact button {
   width: 450px;
   max-width: 500px;
   height: 60px;
