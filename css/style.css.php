@@ -257,3 +257,12 @@ footer p{
 .Paypal{
   height: 50px;
 }
+.Pay{
+  color: 000000;
+}
+.Paypalbtn{
+  font-weight:bolder;
+  border: solid;
+  border-radius: 25px;
+  color: 000000;
+}
