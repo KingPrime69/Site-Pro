@@ -1,4 +1,17 @@
+<?php require_once 'helpers/config.php'; ?>
 <?php require_once 'helpers/head.php'; ?>
+<?php
+  $url="connexion.php";
+  if(isset($_SESSION['user']['admin']) == 0){
+    echo '<script type="text/javascript">';
+    echo 'window.location.href="'.$url.'";';
+    echo '</script>';
+    echo '<noscript>';
+    echo '<meta http-equiv="refresh" content="0;url='.$url.'" />';
+    echo '</noscript>';
+  }
+  else{
+      ?>
 <body>
   <?php
 
@@ -17,6 +30,9 @@
     foreach ($data as $live):
     ?>
   <h3>Crée un thème</h3>
+  <div class="center-align">
+    <a href="admin.php">Page admin</a>
+  </div>
   <div class="row">
     <form class="col s12" method="post" action="createTheme.php">
       <div class="row">
@@ -177,4 +193,6 @@
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
-</html>
+<?php
+}
+?>

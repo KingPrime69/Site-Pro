@@ -25,6 +25,6 @@ else{
       //renvoie que le compte est bloqué
     }
   }
-  header('Location:../index.php');
+   header('Location:../connexion.php');
 }
 ?>

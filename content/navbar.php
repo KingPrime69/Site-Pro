@@ -6,7 +6,6 @@
     <ul class="right hide-on-med-and-down">
       <li><a href="connexion.php" class="material-icons modal-trigger">person_outline</a></li>
       <li><a href="index.php">Accueil</a></li>
-      <li><a href="admin.php">Admin</a></li>
     </ul>
   </div>
 </nav>

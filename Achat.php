@@ -74,9 +74,9 @@
           </div>
         </div>
         <div class="row">
-          <div class="Paypalbtn col l4 valign-wrapper">
-            <a class="Pay waves-effect waves-light"><i class="small material-icons left">radio_button_unchecked</i>Cryptomonnaie (Bitcoin)</a>
-            <i class="right-align"><img src="img/Paypal.png" class="Paypal circle right"></i>
+          <div class="Paypalbtn col s4 row valign-wrapper">
+            <a class="Pay waves-effect waves-light col l8 no-margin"><i class="small material-icons left">radio_button_unchecked</i>Cryptomonnaie (Bitcoin)</a>
+            <img src="img/Paypal.png" class="Paypal circle col l2">
           </div>
         </div>
       </div>
