@@ -1,3 +1,4 @@
+<?php require_once 'helpers/config.php'; ?>
 <!DOCTYPE html>
 <html>
 <?php require_once 'helpers/head.php'; ?>
@@ -34,7 +35,6 @@
         </form>
       </div>
     </div>
-
     <div class="row login">
       <div class="center-align">
         <h3 class="col s12">Se connecter</h3>
@@ -62,6 +62,15 @@
       </div>
       </form>
     </div>
+    <?php
+      if(isset($_SESSION['user']['admin']) == 1){
+        ?>
+        <div class="center-align">
+          <button class="btn green darken-4" href="index.php"><a href="admin.php">Admin</a></button>
+        </div>
+        <?php
+      }
+    ?>
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
