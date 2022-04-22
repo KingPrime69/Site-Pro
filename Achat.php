@@ -69,7 +69,7 @@
         </div>
         <div class="row">
           <div class="Paypalbtn col l4 valign-wrapper">
-            <a class="Pay waves-effect waves-light"><i class="small material-icons left">radio_button_unchecked</i>Paypal       </a>
+            <a class="Pay waves-effect waves-light"><i class="small material-icons left">radio_button_unchecked</i>Paypal</a>
             <i class="right-align"><img src="img/Paypal.png" class="Paypal circle right"></i>
           </div>
         </div>

@@ -44,10 +44,6 @@
 
           <div class="col l2 s6 no-margin imge">
             <a href="Produit.php"> <img src="<?php echo $live['Article-6']; ?>" width="271px" height="377px"></a>
-<<<<<<< HEAD
->>>>>>> e0742cb4b1f6bfa83cc1515f7e0e5f3001b4a59e
-=======
->>>>>>> 591c65d03f792c412b3e8230e031154404cecdbb
           </div>
       </div>
       <?php endforeach; ?>
