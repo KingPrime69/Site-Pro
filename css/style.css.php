@@ -22,10 +22,12 @@ $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_WARNING);
 
 
 h1 {
+  font-size: 60px;
   text-align: center;
 }
 
 h2 {
+  font-size: 60px;
   text-align: center;
 }
 
@@ -36,6 +38,25 @@ img{
   border-width: 1px;
   border-style: solid;
   margin-top: 10px !important;
+  display: flex
+}
+
+.concept{
+margin-left: 685px;
+}
+
+
+.imgbox{
+  display: 50% !important;
+}
+
+.texte1{
+  position: relative;
+  display: inline-flex;
+}
+
+.texte2{
+
 }
 
 
@@ -89,6 +110,11 @@ img{
   margin-top: 50px;
 }
 
+.pbox2 {
+  font-size: 60px;
+  text-align: center;
+} -->
+
 .gg{
   margin-top: 25px;
 }
@@ -115,7 +141,7 @@ img{
 footer{
   background-color: black!important;
   border-top: 6px solid rgba(51, 51, 51, 0.25);
-  margin-top: 100px;
+  display: absolute;
   text-align: center;
 }
 
@@ -137,6 +163,8 @@ footer p{
   color: #303030;
 }
 
+
+
 .align{
   margin-left: 10px !important;
   margin-top: 10px;
@@ -149,6 +177,7 @@ footer p{
   border-radius: 8px;
   padding: 0 50px 0 50px;
   background: white;
+  margin-bottom: 50px;
 }
 
 .contactez-nous > h1 {
@@ -198,6 +227,7 @@ footer p{
 .formContact div > textarea {
   height: 195px;
   padding: 15px 0px 0px 10px;
+  display: inline table;
 }
 
 .formContact div > input::placeholder, form div > textarea::placeholder {
@@ -229,6 +259,10 @@ footer p{
   border-radius: 5px;
   box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
   color: #303030;
+}
+
+.message {
+display: justify-content;
 }
 
 .infoCarte{
