@@ -23,7 +23,11 @@
       <h2 class="style-font big color-text">HALLOWEEN</h2>
 
       <div class="row center-align">
+<<<<<<< HEAD
           <div class="col l2  s6 no-margin">
+=======
+          <div class="col l2  s6 no-margin imge">
+>>>>>>> ee02ad8b2d3817b4a549d985e93e3787225d4a9f
             <a href="Produit.php"> <img src="<?php echo $live['Article-1']; ?>" ></a>
           </div>
 
@@ -42,7 +46,11 @@
             <a href="Produit.php"> <img src="<?php echo $live['Article-5']; ?>" width="271px" height="377px" ></a>
           </div>
 
+<<<<<<< HEAD
           <div class="col l2 s6 no-margin">
+=======
+          <div class="col l2 s6 no-margin imge">
+>>>>>>> ee02ad8b2d3817b4a549d985e93e3787225d4a9f
             <a href="Produit.php"> <img src="<?php echo $live['Article-6']; ?>" width="271px" height="377px"></a>
           </div>
       </div>

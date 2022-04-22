@@ -3,11 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
-<<<<<<< HEAD
--- Généré le : jeu. 21 avr. 2022 à 18:39
-=======
 -- Généré le : jeu. 21 avr. 2022 à 23:02
->>>>>>> e0742cb4b1f6bfa83cc1515f7e0e5f3001b4a59e
 -- Version du serveur : 5.7.36
 -- Version de PHP : 7.4.26
 

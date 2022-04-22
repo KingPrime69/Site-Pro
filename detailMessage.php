@@ -3,41 +3,52 @@
   <?php require_once 'helpers/head.php'; ?>
   <body>
       <?php require_once 'content/navbar.php'; ?>
-      <div class="bodyform">
-        <div class="contactez-nous">
-          <h1>Contactez-nous</h1>
-          <p>Un problème, une question ? N’hésitez pas à utiliser ce formulaire pour prendre contact avec nous !</p>
-          <form action="send.php" method="post" class="formContact">
-            <div>
-              <label for="nom">Votre nom</label>
-              <input type="text" id="nom" name="name" required>
+      <div class="row">
+            <div class="col s4 offset-s4">
+              <label for="nom">Nom</label>
+              <h5><?php echo $_POST['name']; ?></h5>
             </div>
-            <div>
-              <input type="hidden" id="email" name="email" value="<?php if(isset($_SESSION['user'])){echo $_SESSION['user']['email'];} ?>">
-              <p><?php
-              if(empty($_SESSION['user']['email'])){
-                echo "example@email.com";
-              }
-              else {
-                ?> <p> <?php echo $_SESSION['user']['email']; ?> </p> <?php
-              }
-              ?></p>
+            <div class="col s4 offset-s4">
+              <label for="nom">Email</label>
+              <h5><?php echo $_POST['email']; ?></h5>
             </div>
-            <div>
+            <div class="col s4 offset-s4">
               <label for="nom">Objet</label>
-              <input type="text" id="nom" name="object" required>
+              <h5><?php echo $_POST['object']; ?></h5>
             </div>
-            <div>
-              <label for="message">Votre message</label>
-              <textarea id="message" name="texte" required></textarea>
+            <div class="col s4 offset-s4">
+              <label for="message">Contenu</label>
+              <p> <?php echo $_POST['text']; ?> </p>
             </div>
-            <div>
-              <button class="btn waves-effect waves-teal" type="submit">Envoyer mon message</button>
-            </div>
-          </form>
+          </div>
+          <div class="row">
+            <form class="col offset-l4" action="reponse/repExp1.php" method="post">
+              <input type="hidden" name="email" value="<?php echo $_POST['email']; ?>">
+              <input type="hidden" name="name" value="<?php echo $_POST['name']; ?>">
+              <input type="hidden" name="object" value="<?php echo $_POST['object']; ?>">
+              <input type="hidden" name="text" value="<?php echo $_POST['text']; ?>">
+              <button class="btn waves-effect waves-light align" type="submit" name="action">Réponse 1
+                <i class="material-icons right">send</i>
+              </button>
+            </form>
+            <form class="col" action="reponse/repExp2.php" method="post">
+              <input type="hidden" name="email" value="<?php echo $_POST['email']; ?>">
+              <input type="hidden" name="name" value="<?php echo $_POST['name']; ?>">
+              <input type="hidden" name="object" value="<?php echo $_POST['object']; ?>">
+              <input type="hidden" name="text" value="<?php echo $_POST['text']; ?>">
+              <button class="btn waves-effect waves-light align" type="submit" name="action">Réponse 2
+                <i class="material-icons right">send</i>
+              </button>
+            </form>
+            <form class="col" action="reponse/repExp3.php" method="post">
+              <input type="hidden" name="email" value="<?php echo $_POST['email']; ?>">
+              <input type="hidden" name="name" value="<?php echo $_POST['name']; ?>">
+              <input type="hidden" name="object" value="<?php echo $_POST['object']; ?>">
+              <input type="hidden" name="text" value="<?php echo $_POST['text']; ?>">
+              <button class="btn waves-effect waves-light align" type="submit" name="action">Réponse 3
+                <i class="material-icons right">send</i>
+              </button>
+            </form>
         </div>
-      </div>
-
-<?php require_once 'helpers/footer.php'; ?>
   </body>
 </html>
