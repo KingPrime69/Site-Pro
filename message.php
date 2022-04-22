@@ -17,13 +17,17 @@
           <input type="hidden" name="id" value="<?php echo $message['id']; ?>">
           <h5 class="col l2">Mail: <?php echo $message['email']; ?></h5>
           <h5 class="col l2">Objet: <?php echo $message['object']; ?></h5>
+          <input type="hidden" name="email" value="<?php echo $message['email']; ?>">
+          <input type="hidden" name="name" value="<?php echo $message['name']; ?>">
+          <input type="hidden" name="object" value="<?php echo $message['object']; ?>">
+          <input type="hidden" name="text" value="<?php echo $message['text']; ?>">
           <button class="btn waves-effect waves-light col l1 align" type="submit" name="action">voir plus
             <i class="material-icons right">send</i>
           </button>
-          <button class="btn waves-effect waves-light col l1 align" type="submit" name="action">Traité
-            <i class="material-icons right">send</i>
-          </button>
         </form>
+        <button class="btn waves-effect waves-light col l1 align" type="submit" name="action">Traité
+          <i class="material-icons right">send</i>
+        </button>
       </div>
       <?php endforeach; ?>
   <script type="text/javascript" src="js/jquery.js"></script>
